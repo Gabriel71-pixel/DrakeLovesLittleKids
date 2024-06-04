@@ -1,12 +1,96 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333; /* Dark background color */
+            color: white; /* White text color */
+            padding: 10px 0; /* Top and bottom padding */
+            text-align: center; /* Center-align text */
+        }
+
+            header h1 {
+                margin: 0; /* Remove default margin */
+                font-size: 24px; /* Adjust title size */
+            }
+
+            header nav ul {
+                list-style: none; /* Remove bullets from list items */
+                padding: 0;
+            }
+
+                header nav ul li {
+                    display: inline; /* Display list items inline */
+                    margin-left: 20px; /* Space between list items */
+                }
+
+            header nav a {
+                text-decoration: none; /* Remove underline from links */
+                color: white; /* Same text color as header */
+            }
+
+                /* Optional: Add hover effect to navigation links */
+                header nav a:hover {
+                    color: #ffc300; /* Change color on hover */
+                }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
+    <header>
+        <div class="header-title">
+            <h1>DRAKE WAS HERE!</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a><span> 07404442504</span></li>
+                <li><a href="#gmail">Gmail</a><span> drakecockriders.com</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="image-container">
+        <h2 class="image-title">Drake Is My Pookie Bear</h2>
+        <img src="https://i.pinimg.com/236x/b2/c6/08/b2c608b4d4dd880facf59d8a43284891.jpg?nii=t" id="img" alt="Drake">
+    </div>
+
+    <audio id="soundEffect">
+        <source src="https://www.myinstants.com/media/sounds/eww-brother-ewww.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('img').addEventListener('click', function () {
+            var audio = document.getElementById('soundEffect');
+            audio.currentTime = 0; // Reset audio to start
+            audio.play().catch(function (error) {
+                console.log('Error playing audio:', error);
+            });
+        });
+    </script>
+
 </body>
 </html>
-<img src="https://i.pinimg.com/236x/b2/c6/08/b2c608b4d4dd880facf59d8a43284891.jpg?nii=t" id="img" style="width: 235px; height: 235px;">
