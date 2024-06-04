@@ -7,45 +7,15 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Drakes Fan Page | Login & Registration</title>
-    </head>
-<body style="background: url('https://cdn.openart.ai/uploads/image_NW-6C_0R_1678718116925_512.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; overflow: hidden;">
-
-    <header class="nav">
-        <div class="nav-logo">
-      <p>LOGO .</p>
-</div>
-        
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background: url('https://cdn.openart.ai/uploads/image_NW-6C_0R_1678718116925_512.webp') no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
-}
-
-<img alt="Image" draggable="true" src="https://pbs.twimg.com/media/GOdRk3EWIAAfvch?format=jpg&amp;name=small" class="css-9pa8cd">
     <style>
         body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
-        }
-        body {
-            background: url("https://via.placeholder.com/1920x1080");
+            background: url('https://cdn.openart.ai/uploads/image_NW-6C_0R_1678718116925_512.webp') no-repeat center center fixed;
             background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
             overflow: hidden;
-        }
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 110vh;
-            background: rgba(39, 39, 39, 0.4);
         }
         .nav {
             position: fixed;
@@ -249,7 +219,7 @@ body {
                 background: rgba(255, 255, 255, 0.15);
             }
         }
-        @media only screen and (max-width: 540px) {
+     screen and (max-width: 540px) {
             .wrapper {
                 min-height: 100vh;
             }
@@ -278,144 +248,145 @@ body {
 </head>
 <body>
 
-    <header class="nav">
-        <div class="nav-logo">
-            <p>LOGO .</p>
-        </div>
-        <div class="nav-menu" id="navMenu">
-            <ul>
-                <li><a href="#" class="link active">Home</a></li>
-                <li><a href="#" class="link">Blog</a></li>
-                <li><a href="#" class="link">Services</a></li>
-                <li><a href="#" class="link">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-            <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-        </div>
-    </header>
+<header class="nav">
+    <div class="nav-logo">
+        <p>LOGO .</p>
+    </div>
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="#" class="link active">Home</a></li>
+            <li><a href="#" class="link">Blog</a></li>
+            <li><a href="#" class="link">Services</a></li>
+            <li><a href="#" class="link">About</a></li>
+        </ul>
+    </div>
+    <div class="nav-button">
+        <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+        <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+    </div>
+    <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+    </div>
+</header>
 
-    <div class="wrapper">
-        <div class="form-box">
+<div class="wrapper">
+    <div class="form-box">
 
-            <!-- Login Form -->
-            <div class="login-container" id="login">
-                <div class="top">
-                    <span>                    <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                    <header>Login</header>
+        <!-- Login Form -->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
                 </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
                 <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Username or Email">
+                    <input type="text" class="input-field" placeholder="Firstname">
                     <i class="bx bx-user"></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Sign In">
-                </div>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="login-check">
-                        <label for="login-check"> Remember Me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Forgot password?</a></label>
-                    </div>
+                    <input type="text" class="input-field" placeholder="Lastname">
+                    <i class="bx bx-user"></i>
                 </div>
             </div>
-
-            <!-- Registration Form -->
-            <div class="register-container" id="register">
-                <div class="top">
-                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                    <header>Sign Up</header>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
                 </div>
-                <div class="two-forms">
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Firstname">
-                        <i class="bx bx-user"></i>
-                    </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Lastname">
-                        <i class="bx bx-user"></i>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
-                    <i class="bx bx-envelope"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Register">
-                </div>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="register-check">
-                        <label for="register-check"> Remember Me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Terms & conditions</a></label>
-                    </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="image-container">
-        <h2 class="image-title">Drake Is My Pookie Bear</h2>
-        <img src="https://i.pinimg.com/236x/b2/c6/08/b2c608b4d4dd880facf59d8a43284891.jpg?nii=t" id="img" alt="Drake">
-    </div>
+<div class="image-container">
+    <h2 class="image-title">Drake Is My Pookie Bear</h2>
+    <img src="https://i.pinimg.com/236x/b2/c6/08/b2c608b4d4dd880facf59d8a43284891.jpg?nii=t" id="img" alt="Drake">
+</div>
 
-    <audio id="soundEffect">
-        <source src="https://www.myinstants.com/media/sounds/eww-brother-ewww.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+<audio id="soundEffect">
+    <source src="https://www.myinstants.com/media/sounds/eww-brother-ewww.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
-    <script>
-        document.getElementById('img').addEventListener('click', function () {
-            var audio = document.getElementById('soundEffect');
-            audio.currentTime = 0; // Reset audio to start
-            audio.play().catch(function (error) {
-                console.log('Error playing audio:', error);
-            });
+<script>
+    document.getElementById('img').addEventListener('click', function () {
+        var audio = document.getElementById('soundEffect');
+        audio.currentTime = 0; // Reset audio to start
+        audio.play().catch(function (error) {
+            console.log('Error playing audio:', error);
         });
-        function myMenuFunction() {
-            var i = document.getElementById("navMenu");
-            if (i.className === "nav-menu") {
-                i.className += " responsive";
-            } else {
-                i.className = "nav-menu";
-            }
+    });
+    function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+        if (i.className === "nav-menu") {
+            i.className += " responsive";
+        } else {
+            i.className = "nav-menu";
         }
-        var a = document.getElementById("loginBtn");
-        var b = document.getElementById("registerBtn");
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        function login() {
-            x.style.left = "4px";
-            y.style.right = "-520px";
-            a.className += " white-btn";
-            b.className = "btn";
-            x.style.opacity = 1;
-            y.style.opacity = 0;
-        }
-        function register() {
-            x.style.left = "-510px";
-            y.style.right = "5px";
-            a.className = "btn";
-            b.className += " white-btn";
-            x.style.opacity = 0;
-            y.style.opacity = 1;
-        }
-    </script>
+    }
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
 </body>
 </html>
+
